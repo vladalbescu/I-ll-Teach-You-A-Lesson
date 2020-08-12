@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>
+      I'll Teach You A Lesson - JS Functions (Arrow Functions vs Functions)
+    </title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="text-gray-700 flex lg:flex-row bg-gray-100">
+    <nav
+      class="hidden lg:fixed lg:block lg:h-screen lg:w-3/12 xl:w-2/12 lg:border-r border-gray-400"
+    >
+      <ul
+        class="flex flex-col items-start bg-gray-200 h-full w-full pt-20 lg:pl-10"
+      >
+        <li class="font-semibold text-gray-500 hover:text-gray-700 mb-3">
+          <a href="#functions">What are functions?</a>
+        </li>
+        <li class="font-semibold text-gray-500 hover:text-gray-700 mb-3">
+          <a href="#parameters">Parameters</a>
+        </li>
+        <li class="font-semibold text-gray-500 hover:text-gray-700 mb-3">
+          <a href="#scope">Scope</a>
+        </li>
+        <li class="font-semibold text-gray-500 hover:text-gray-700 mb-3">
+          <a href="#closure">Closure</a>
+        </li>
+        <li class="font-semibold text-gray-500 hover:text-gray-700 mb-3">
+          <a href="#declaration-vs-expression">Declaration vs Expression</a>
+        </li>
+        <li class="font-semibold text-gray-500 hover:text-gray-700 mb-3">
+          <a href="#">Arrow Functions</a>
+        </li>
+      </ul>
+    </nav>
+    <main
+      class="w-full xl:w-8/12 mx-auto xl:ml-20 pt-8 xl:pt-20 px-1 md:px-10 lg:pl-64 lg:ml-32 xl:pl-48 xl:ml-64"
+    >
+      <header class="px-2 md:px-0 md:pb-10">
+        <h1
+          class="uppercase tracking-widest text-lg md:text-xl lg:text-2xl font-bold text-gray-400 border-b-2"
+        >
+          I'll Teach You A Lesson
+        </h1>
+        <h2 class="text-3xl md:text-5xl lg:text-6xl font-bold">
+          Javascript Functions
+        </h2>
+        <h3 class="text-md md:text-xl lg:text-2xl text-gray-500">
+          (Arrow Functions vs Functions)
+        </h3>
+      </header>
+      <section id="functions" class="pt-10">
+        <div
+          class="pb-12 mb-5 md:mb-10 border bg-white py-5 md:py-10 px-4 md:p-10 rounded-sm"
+        >
+          <h2
+            class="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4 border-b"
+          >
+            What are functions?
+          </h2>
+          <p class="mb-10 text-sm md:text-base">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+            quidem labore molestiae quibusdam animi amet delectus laudantium aut
+            tempora nesciunt fugit culpa quaerat, voluptatum placeat commodi
+            provident distinctio inventore! Ducimus nesciunt impedit at amet ut
+            esse fugit ex culpa pariatur, odio inventore error ratione, nemo
+            porro minus! Enim fuga soluta id itaque maxime assumenda rerum
+            praesentium aliquam velit deleniti ipsa rem, quos harum, laborum
+            fugit, et ipsam dolorum porro repudiandae ratione officiis minima
+            perferendis voluptate est? Sint iste ducimus mollitia in corporis
+            incidunt molestiae velit similique possimus? Repudiandae voluptates,
+            earum facilis at itaque consequatur totam eaque ipsam illo aut
+            repellat.
+          </p>
+          <figure class="border">
+            <iframe
+              width="100%"
+              height="300"
+              src="//jsfiddle.net/vladalbescu/wvLtzcny/3/embedded/js,result/"
+              allowfullscreen="allowfullscreen"
+              allowpaymentrequest
+              frameborder="0"
+            ></iframe>
+          </figure>
+        </div>
+      </section>
+      <section id="parameters" class="pt-10">
+        <div
+          class="pb-12 mb-5 md:mb-10 border bg-white py-5 md:py-10 px-4 md:p-10 rounded-sm"
+        >
+          <h2
+            class="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4 border-b"
+          >
+            Parameters
+          </h2>
+          <p class="mb-10 text-sm md:text-base">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+            quidem labore molestiae quibusdam animi amet delectus laudantium aut
+            tempora nesciunt fugit culpa quaerat, voluptatum placeat commodi
+            provident distinctio inventore! Ducimus nesciunt impedit at amet ut
+            esse fugit ex culpa pariatur, odio inventore error ratione, nemo
+            porro minus! Enim fuga soluta id itaque maxime assumenda rerum
+            praesentium aliquam velit deleniti ipsa rem, quos harum, laborum
+            fugit, et ipsam dolorum porro repudiandae ratione officiis minima
+            perferendis voluptate est? Sint iste ducimus mollitia in corporis
+            incidunt molestiae velit similique possimus? Repudiandae voluptates,
+            earum facilis at itaque consequatur totam eaque ipsam illo aut
+            repellat.
+          </p>
+          <figure class="border">
+            <iframe
+              width="100%"
+              height="300"
+              src="//jsfiddle.net/vladalbescu/wvLtzcny/3/embedded/js,result/"
+              allowfullscreen="allowfullscreen"
+              allowpaymentrequest
+              frameborder="0"
+            ></iframe>
+          </figure>
+        </div>
+      </section>
+      <section id="scope" class="pt-10">
+        <div
+          class="pb-12 mb-5 md:mb-10 border bg-white py-5 md:py-10 px-4 md:p-10 rounded-sm"
+        >
+          <h2
+            class="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4 border-b"
+          >
+            Scope
+          </h2>
+          <p class="mb-10 text-sm md:text-base">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+            quidem labore molestiae quibusdam animi amet delectus laudantium aut
+            tempora nesciunt fugit culpa quaerat, voluptatum placeat commodi
+            provident distinctio inventore! Ducimus nesciunt impedit at amet ut
+            esse fugit ex culpa pariatur, odio inventore error ratione, nemo
+            porro minus! Enim fuga soluta id itaque maxime assumenda rerum
+            praesentium aliquam velit deleniti ipsa rem, quos harum, laborum
+            fugit, et ipsam dolorum porro repudiandae ratione officiis minima
+            perferendis voluptate est? Sint iste ducimus mollitia in corporis
+            incidunt molestiae velit similique possimus? Repudiandae voluptates,
+            earum facilis at itaque consequatur totam eaque ipsam illo aut
+            repellat.
+          </p>
+          <figure class="border">
+            <iframe
+              width="100%"
+              height="300"
+              src="//jsfiddle.net/vladalbescu/wvLtzcny/3/embedded/js,result/"
+              allowfullscreen="allowfullscreen"
+              allowpaymentrequest
+              frameborder="0"
+            ></iframe>
+          </figure>
+        </div>
+      </section>
+
+      <section id="closure" class="pt-10">
+        <div
+          class="pb-12 mb-5 md:mb-10 border bg-white py-5 md:py-10 px-4 md:p-10 rounded-sm"
+        >
+          <h2
+            class="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4 border-b"
+          >
+            Closure
+          </h2>
+          <p class="mb-10 text-sm md:text-base">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+            quidem labore molestiae quibusdam animi amet delectus laudantium aut
+            tempora nesciunt fugit culpa quaerat, voluptatum placeat commodi
+            provident distinctio inventore! Ducimus nesciunt impedit at amet ut
+            esse fugit ex culpa pariatur, odio inventore error ratione, nemo
+            porro minus! Enim fuga soluta id itaque maxime assumenda rerum
+            praesentium aliquam velit deleniti ipsa rem, quos harum, laborum
+            fugit, et ipsam dolorum porro repudiandae ratione officiis minima
+            perferendis voluptate est? Sint iste ducimus mollitia in corporis
+            incidunt molestiae velit similique possimus? Repudiandae voluptates,
+            earum facilis at itaque consequatur totam eaque ipsam illo aut
+            repellat.
+          </p>
+          <figure class="border">
+            <iframe
+              width="100%"
+              height="300"
+              src="//jsfiddle.net/vladalbescu/wvLtzcny/3/embedded/js,result/"
+              allowfullscreen="allowfullscreen"
+              allowpaymentrequest
+              frameborder="0"
+            ></iframe>
+          </figure>
+        </div>
+      </section>
+
+      <section id="declaration-vs-expression" class="pt-10">
+        <div
+          class="pb-12 mb-5 md:mb-10 border bg-white py-5 md:py-10 px-4 md:p-10 rounded-sm"
+        >
+          <h2
+            class="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4 border-b"
+          >
+            Declaration vs Expression
+          </h2>
+          <p class="mb-10 text-sm md:text-base">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+            quidem labore molestiae quibusdam animi amet delectus laudantium aut
+            tempora nesciunt fugit culpa quaerat, voluptatum placeat commodi
+            provident distinctio inventore! Ducimus nesciunt impedit at amet ut
+            esse fugit ex culpa pariatur, odio inventore error ratione, nemo
+            porro minus! Enim fuga soluta id itaque maxime assumenda rerum
+            praesentium aliquam velit deleniti ipsa rem, quos harum, laborum
+            fugit, et ipsam dolorum porro repudiandae ratione officiis minima
+            perferendis voluptate est? Sint iste ducimus mollitia in corporis
+            incidunt molestiae velit similique possimus? Repudiandae voluptates,
+            earum facilis at itaque consequatur totam eaque ipsam illo aut
+            repellat.
+          </p>
+          <figure class="border">
+            <iframe
+              width="100%"
+              height="300"
+              src="//jsfiddle.net/vladalbescu/wvLtzcny/3/embedded/js,result/"
+              allowfullscreen="allowfullscreen"
+              allowpaymentrequest
+              frameborder="0"
+            ></iframe>
+          </figure>
+        </div>
+      </section>
+
+      <section id="arrow-functions" class="pt-10">
+        <div
+          class="pb-12 mb-5 md:mb-10 border bg-white py-5 md:py-10 px-4 md:p-10 rounded-sm"
+        >
+          <h2
+            class="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4 border-b"
+          >
+            Arrow Functions
+          </h2>
+          <p class="mb-10 text-sm md:text-base">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+            quidem labore molestiae quibusdam animi amet delectus laudantium aut
+            tempora nesciunt fugit culpa quaerat, voluptatum placeat commodi
+            provident distinctio inventore! Ducimus nesciunt impedit at amet ut
+            esse fugit ex culpa pariatur, odio inventore error ratione, nemo
+            porro minus! Enim fuga soluta id itaque maxime assumenda rerum
+            praesentium aliquam velit deleniti ipsa rem, quos harum, laborum
+            fugit, et ipsam dolorum porro repudiandae ratione officiis minima
+            perferendis voluptate est? Sint iste ducimus mollitia in corporis
+            incidunt molestiae velit similique possimus? Repudiandae voluptates,
+            earum facilis at itaque consequatur totam eaque ipsam illo aut
+            repellat.
+          </p>
+          <figure class="border">
+            <iframe
+              width="100%"
+              height="300"
+              src="//jsfiddle.net/vladalbescu/wvLtzcny/3/embedded/js,result/"
+              allowfullscreen="allowfullscreen"
+              allowpaymentrequest
+              frameborder="0"
+            ></iframe>
+          </figure>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
