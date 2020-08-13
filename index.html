@@ -20,35 +20,41 @@
     <nav
       class="hidden lg:fixed lg:block lg:h-screen lg:w-3/12 xl:w-2/12 lg:border-r border-gray-400"
     >
-      <ul
-        class="flex flex-col items-start bg-gray-200 h-full w-full pt-20 lg:pl-10"
+      <ol
+        class="flex flex-col items-start bg-gray-200 h-full w-full pt-20 lg:pl-12 list-decimal"
       >
-        <li class="font-semibold text-gray-500 hover:text-gray-700 mb-3">
-          <a href="#functions">What are functions?</a>
+        <li class="font-semibold text-gray-600 hover:text-gray-700 mb-3">
+          <a href="./index.html">What are functions?</a>
         </li>
         <li class="font-semibold text-gray-500 hover:text-gray-700 mb-3">
-          <a href="#parameters">Parameters</a>
+          <a href="./pages/inputs-and-outputs.html">Inputs and outputs</a>
         </li>
         <li class="font-semibold text-gray-500 hover:text-gray-700 mb-3">
-          <a href="#scope">Scope</a>
+          <a href="./pages/scope.html">Scope</a>
         </li>
         <li class="font-semibold text-gray-500 hover:text-gray-700 mb-3">
-          <a href="#closure">Closure</a>
+          <a href="./pages/declaration-vs-expression.html">Declaration vs Expression</a>
         </li>
         <li class="font-semibold text-gray-500 hover:text-gray-700 mb-3">
-          <a href="#declaration-vs-expression">Declaration vs Expression</a>
+          <a href="./pages/hof.html">Higher order functions</a>
         </li>
         <li class="font-semibold text-gray-500 hover:text-gray-700 mb-3">
-          <a href="#arrow-functions">Arrow Functions</a>
+          <a href="./pages/closures.html">Closures</a>
         </li>
-      </ul>
+        <li class="font-semibold text-gray-500 hover:text-gray-700 mb-3">
+          <a href="./pages/iife.html">IIFE</a>
+        </li>
+        <li class="font-semibold text-gray-500 hover:text-gray-700 mb-3">
+          <a href="./pages/arrow-functions.html">Arrow Functions</a>
+        </li>
+      </ol>
     </nav>
     <main
-      class="w-full xl:w-8/12 mx-auto xl:ml-20 pt-8 xl:pt-20 px-1 md:px-10 lg:pl-64 lg:ml-32 xl:pl-48 xl:ml-64"
+      class="w-full xl:w-8/12 mx-auto xl:ml-20 pt-8 xl:pt-20 px-1 md:px-10 lg:pl-64 lg:ml-32 xl:pl-48 xl:ml-64 mb-10"
     >
       <header class="px-2 md:px-0 pb-5 md:pb-10">
         <h1
-          class="uppercase tracking-widest text-lg md:text-xl lg:text-2xl font-extrabold text-gray-400 border-b-2"
+          class="uppercase tracking-widest text-sm md:text-xl font-extrabold text-gray-400 border-b-2 mb-2 lg:mb-3"
         >
           I'll Teach You A Lesson
         </h1>
@@ -59,6 +65,7 @@
           (Arrow Functions vs Functions)
         </h3>
       </header>
+
       <section id="functions" class="xl:pt-5">
         <div
           class="pb-12 mb-2 md:mb-10 border bg-white py-5 md:py-10 px-4 md:p-10 rounded-sm"
@@ -66,212 +73,43 @@
           <h2
             class="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4 border-b"
           >
-            What are functions?
+            1. What are functions?
           </h2>
-          <p class="mb-10 text-sm md:text-base">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-            quidem labore molestiae quibusdam animi amet delectus laudantium aut
-            tempora nesciunt fugit culpa quaerat, voluptatum placeat commodi
-            provident distinctio inventore! Ducimus nesciunt impedit at amet ut
-            esse fugit ex culpa pariatur, odio inventore error ratione, nemo
-            porro minus! Enim fuga soluta id itaque maxime assumenda rerum
-            praesentium aliquam velit deleniti ipsa rem, quos harum, laborum
-            fugit, et ipsam dolorum porro repudiandae ratione officiis minima
-            perferendis voluptate est? Sint iste ducimus mollitia in corporis
-            incidunt molestiae velit similique possimus? Repudiandae voluptates,
-            earum facilis at itaque consequatur totam eaque ipsam illo aut
-            repellat.
-          </p>
-          <figure class="border">
-            <iframe
-              width="100%"
-              height="300"
-              src="//jsfiddle.net/vladalbescu/wvLtzcny/3/embedded/js,result/"
-              allowfullscreen="allowfullscreen"
-              allowpaymentrequest
-              frameborder="0"
-            ></iframe>
-          </figure>
-        </div>
-      </section>
-      <section id="parameters" class="xl:pt-5">
-        <div
-          class="pb-12 mb-2 md:mb-10 border bg-white py-5 md:py-10 px-4 md:p-10 rounded-sm"
-        >
-          <h2
-            class="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4 border-b"
-          >
-            Parameters
-          </h2>
-          <p class="mb-10 text-sm md:text-base">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-            quidem labore molestiae quibusdam animi amet delectus laudantium aut
-            tempora nesciunt fugit culpa quaerat, voluptatum placeat commodi
-            provident distinctio inventore! Ducimus nesciunt impedit at amet ut
-            esse fugit ex culpa pariatur, odio inventore error ratione, nemo
-            porro minus! Enim fuga soluta id itaque maxime assumenda rerum
-            praesentium aliquam velit deleniti ipsa rem, quos harum, laborum
-            fugit, et ipsam dolorum porro repudiandae ratione officiis minima
-            perferendis voluptate est? Sint iste ducimus mollitia in corporis
-            incidunt molestiae velit similique possimus? Repudiandae voluptates,
-            earum facilis at itaque consequatur totam eaque ipsam illo aut
-            repellat.
-          </p>
-          <figure class="border">
-            <iframe
-              width="100%"
-              height="300"
-              src="//jsfiddle.net/vladalbescu/wvLtzcny/3/embedded/js,result/"
-              allowfullscreen="allowfullscreen"
-              allowpaymentrequest
-              frameborder="0"
-            ></iframe>
-          </figure>
-        </div>
-      </section>
-      <section id="scope" class="xl:pt-5">
-        <div
-          class="pb-12 mb-2 md:mb-10 border bg-white py-5 md:py-10 px-4 md:p-10 rounded-sm"
-        >
-          <h2
-            class="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4 border-b"
-          >
-            Scope
-          </h2>
-          <p class="mb-10 text-sm md:text-base">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-            quidem labore molestiae quibusdam animi amet delectus laudantium aut
-            tempora nesciunt fugit culpa quaerat, voluptatum placeat commodi
-            provident distinctio inventore! Ducimus nesciunt impedit at amet ut
-            esse fugit ex culpa pariatur, odio inventore error ratione, nemo
-            porro minus! Enim fuga soluta id itaque maxime assumenda rerum
-            praesentium aliquam velit deleniti ipsa rem, quos harum, laborum
-            fugit, et ipsam dolorum porro repudiandae ratione officiis minima
-            perferendis voluptate est? Sint iste ducimus mollitia in corporis
-            incidunt molestiae velit similique possimus? Repudiandae voluptates,
-            earum facilis at itaque consequatur totam eaque ipsam illo aut
-            repellat.
-          </p>
-          <figure class="border">
-            <iframe
-              width="100%"
-              height="300"
-              src="//jsfiddle.net/vladalbescu/wvLtzcny/3/embedded/js,result/"
-              allowfullscreen="allowfullscreen"
-              allowpaymentrequest
-              frameborder="0"
-            ></iframe>
-          </figure>
-        </div>
-      </section>
+          <div class="mb-5 text-sm md:text-base">
+            <p class="mb-2">
+              Functions let us define a code of block which we can call and
+              execute whenever we want.
+            </p>
+            <p class="mb-2">
+              Declaring a function consists of the <code>function</code> keyword followed by:
+              <ol class="ml-8 mb-2 list-disc">
+                <li>the function's name (it is recommended to use a descriptive name which starts with a verb and uses <a href="https://techterms.com/definition/camelcase" target="_blank" class="font-semibold text-blue-600 underline">camel case</a>)</li>
+                <li>a pair of closed parentheses</li>
+                <li>a pair curly brackets within which we can write what the function will do (known as <strong>the function's body</strong>)</li>
+              </ol>
+            </p>
+            <p>The following code declares and then calls a simple function named <code>sayHello</code>, which console logs "Hello!".</p>
+          </div>
 
-      <section id="closure" class="xl:pt-5">
-        <div
-          class="pb-12 mb-2 md:mb-10 border bg-white py-5 md:py-10 px-4 md:p-10 rounded-sm"
-        >
-          <h2
-            class="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4 border-b"
-          >
-            Closure
-          </h2>
-          <p class="mb-10 text-sm md:text-base">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-            quidem labore molestiae quibusdam animi amet delectus laudantium aut
-            tempora nesciunt fugit culpa quaerat, voluptatum placeat commodi
-            provident distinctio inventore! Ducimus nesciunt impedit at amet ut
-            esse fugit ex culpa pariatur, odio inventore error ratione, nemo
-            porro minus! Enim fuga soluta id itaque maxime assumenda rerum
-            praesentium aliquam velit deleniti ipsa rem, quos harum, laborum
-            fugit, et ipsam dolorum porro repudiandae ratione officiis minima
-            perferendis voluptate est? Sint iste ducimus mollitia in corporis
-            incidunt molestiae velit similique possimus? Repudiandae voluptates,
-            earum facilis at itaque consequatur totam eaque ipsam illo aut
-            repellat.
-          </p>
           <figure class="border">
-            <iframe
-              width="100%"
-              height="300"
-              src="//jsfiddle.net/vladalbescu/wvLtzcny/3/embedded/js,result/"
-              allowfullscreen="allowfullscreen"
-              allowpaymentrequest
-              frameborder="0"
-            ></iframe>
-          </figure>
-        </div>
-      </section>
-
-      <section id="declaration-vs-expression" class="xl:pt-5">
-        <div
-          class="pb-12 mb-2 md:mb-10 border bg-white py-5 md:py-10 px-4 md:p-10 rounded-sm"
-        >
-          <h2
-            class="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4 border-b"
-          >
-            Declaration vs Expression
-          </h2>
-          <p class="mb-10 text-sm md:text-base">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-            quidem labore molestiae quibusdam animi amet delectus laudantium aut
-            tempora nesciunt fugit culpa quaerat, voluptatum placeat commodi
-            provident distinctio inventore! Ducimus nesciunt impedit at amet ut
-            esse fugit ex culpa pariatur, odio inventore error ratione, nemo
-            porro minus! Enim fuga soluta id itaque maxime assumenda rerum
-            praesentium aliquam velit deleniti ipsa rem, quos harum, laborum
-            fugit, et ipsam dolorum porro repudiandae ratione officiis minima
-            perferendis voluptate est? Sint iste ducimus mollitia in corporis
-            incidunt molestiae velit similique possimus? Repudiandae voluptates,
-            earum facilis at itaque consequatur totam eaque ipsam illo aut
-            repellat.
-          </p>
-          <figure class="border">
-            <iframe
-              width="100%"
-              height="300"
-              src="//jsfiddle.net/vladalbescu/wvLtzcny/3/embedded/js,result/"
-              allowfullscreen="allowfullscreen"
-              allowpaymentrequest
-              frameborder="0"
-            ></iframe>
-          </figure>
-        </div>
-      </section>
-
-      <section id="arrow-functions" class="xl:pt-5">
-        <div
-          class="pb-12 mb-2 md:mb-10 border bg-white py-5 md:py-10 px-4 md:p-10 rounded-sm"
-        >
-          <h2
-            class="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4 border-b"
-          >
-            Arrow Functions
-          </h2>
-          <p class="mb-10 text-sm md:text-base">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-            quidem labore molestiae quibusdam animi amet delectus laudantium aut
-            tempora nesciunt fugit culpa quaerat, voluptatum placeat commodi
-            provident distinctio inventore! Ducimus nesciunt impedit at amet ut
-            esse fugit ex culpa pariatur, odio inventore error ratione, nemo
-            porro minus! Enim fuga soluta id itaque maxime assumenda rerum
-            praesentium aliquam velit deleniti ipsa rem, quos harum, laborum
-            fugit, et ipsam dolorum porro repudiandae ratione officiis minima
-            perferendis voluptate est? Sint iste ducimus mollitia in corporis
-            incidunt molestiae velit similique possimus? Repudiandae voluptates,
-            earum facilis at itaque consequatur totam eaque ipsam illo aut
-            repellat.
-          </p>
-          <figure class="border">
-            <iframe
-              width="100%"
-              height="300"
-              src="//jsfiddle.net/vladalbescu/wvLtzcny/3/embedded/js,result/"
-              allowfullscreen="allowfullscreen"
-              allowpaymentrequest
-              frameborder="0"
-            ></iframe>
+            <iframe height="500px" width="100%" src="https://repl.it/@vladalbescu/Functions?lite=true" scrolling="no"
+              frameborder="no" allowtransparency="true" allowfullscreen="true"
+              sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
           </figure>
         </div>
       </section>
     </main>
+        <a id="nextLink" href="./pages/inputs-and-outputs.html"></a>.
+        <script>
+          document.addEventListener("keyup", function (e) {
+            var key = e.which || e.keyCode;
+            switch (key) {
+              //right arrow
+              case 39:
+                document.getElementById("nextLink").click();
+                break;
+            }
+          });
+        </script>
   </body>
 </html>
