@@ -79,8 +79,8 @@
             3. Scope
           </h2>
           <div>
-            In modern Javascript, scopes are created by functions, objects,
-            <code>if</code>, <code>for</code>, <code>while</code> and curly
+            Scopes are created by functions. In modern Javascript, scopes are also created by statements such as
+            <code>if</code>, <code>for</code> loops, <code>while</code> and curly
             brackets.
           </div>
           <div class="mb-10 text-sm md:text-base">
@@ -90,8 +90,11 @@
               These variable are called <strong>local variables</strong>.
             </p>
             <p class="mb-2">
-              However, the function has access to the outer variables (from the
+              However, the function has access to the outer variables (from its
               outer scopes) and can modify their values.
+            </p>
+            <p class=mb-2">
+              Every script has a main scope known as the global scope. Every other scope is a direct or indirect children of that scope.
             </p>
           </div>
           <figure class="border">
