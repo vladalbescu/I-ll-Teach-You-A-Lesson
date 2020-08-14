@@ -60,8 +60,8 @@
         <h2 class="text-3xl md:text-5xl lg:text-6xl font-bold leading-none">
           Javascript Functions
         </h2>
-        <h3 class="text-md md:text-xl lg:text-2xl text-gray-500">
-          (Arrow Functions vs Functions)
+        <h3 class="text-md md:text-xl lg:text-2xl text-gray-500 mt-1 md:mt-3 lg:mt-4">
+          (Functions vs Arrow Functions)
         </h3>
       </header>
 
@@ -108,7 +108,11 @@
         </div>
       </section>
     </main>
-    <a id="prevLink" href="./iife.html"></a>
+    <div class="fixed lg:hidden left-0 bottom-0 flex justify-center pb-3 bg-gray-500 w-full border-t-2">
+      <a id="prevLink" href="./iife.html"
+        class="text-lg font-semibold text-gray-600 hover:text-gray-200 bg-gray-300 hover:bg-gray-700 h-8 box-content px-4 py-2 text-center rounded-sm mr-3 mt-5">Previous</a>
+      <div class="opacity-0 text-lg font-semibold text-gray-600 hover:text-gray-200 bg-gray-300 hover:bg-gray-700 h-8 box-content px-8 py-2  text-center rounded-sm mt-5">Next</div>
+    </div>
     <script>
       document.addEventListener("keyup", function (e) {
         var key = e.which || e.keyCode;
